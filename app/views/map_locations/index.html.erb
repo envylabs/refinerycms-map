@@ -1,0 +1,10 @@
+<% content_for :body_content_left do %>
+  <%= @page[:body] if @map_locations.empty? %>
+  <%= render :partial => 'map', :locals => {:width => 500, :height => 500} %>
+<% end %>
+
+<% content_for :body_content_right do %>
+  <%= render :partial => 'locations' %>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>

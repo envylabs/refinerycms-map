@@ -1,0 +1,16 @@
+<li class='clearfix record <%= cycle("on", "on-hover") %>'>
+  <span class='title'>
+    <%=h map_location.title %>
+    <span class="preview"><%=h map_location.full_address %></span>
+  </span>
+  <span class='actions'>
+    <%= link_to refinery_icon_tag('application_go.png'), map_location_url(map_location),
+                :title => t('.view_live'),
+                :target => "_blank" %>
+    <%= link_to refinery_icon_tag('application_edit.png'), edit_admin_map_location_path(map_location),
+                :title => t('.edit') %>
+    <%= link_to refinery_icon_tag('delete.png'), admin_map_location_path(map_location),
+                :class => "cancel confirm-delete",
+                :title => t('.delete') %>
+  </span>
+</li>

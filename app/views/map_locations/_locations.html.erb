@@ -1,0 +1,20 @@
+<div id="map-side-bar">
+  <% if @map_locations.empty? %>
+    <p>No locations found near <strong><%= params[:q] %></strong></p>
+  <% else %>
+    <% @map_locations.each do |loc| %>
+      <div class="map-location" data-jmapping="{id: <%= loc.id %>, point: {lat: <%= loc.lat %>, lng: <%= loc.lng %>}}">
+        <a href="#" class="map-link"><%= loc.title %></a>
+        <div class="info-box">
+          <p><%= loc.title %></p>
+          <p>
+            <%= loc.address %><br/>
+            <%= loc.city %>, <%= loc.state %> <%= loc.zipcode %>
+          </p>
+          <p><%= loc.phone %></p>
+          <p><%= loc.url %></p>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
+</div>

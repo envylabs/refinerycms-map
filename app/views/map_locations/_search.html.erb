@@ -1,0 +1,5 @@
+<% form_tag map_locations_url, :method => :get do %>
+  <%= label_tag "Enter address, city, or zip code" %><br/>
+  <%= text_field_tag :q, params[:q] %><br/>
+  <%= submit_tag "Find nearby locations" %>
+<% end %>

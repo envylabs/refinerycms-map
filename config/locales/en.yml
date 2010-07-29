@@ -1,0 +1,31 @@
+en:
+  plugins:
+    map:
+      title: Map
+  admin:
+    map_locations:
+      map_location:
+        view_live: "View this location live on the map<br/><em>(opens in a new window)</em>"
+        edit: "Edit this location"
+        delete: "Remove this location forever"
+      index:
+        actions: Actions
+        create: "Create Location"
+        news_item: Location
+        no_items: "Sorry, no results found."
+        no_items_yet: 'There are no locations yet. Click "Create Location" to add one.'
+  map_locations:
+    show:
+      back_to_index: "Back to the map"
+  activerecord:
+    attributes:
+      map_location:
+        title: Title
+        address: Address
+        city: City
+        state: State
+        zipcode: Zip Code
+        phone: Phone Number
+        url: Url
+    models:
+      map_location: Location
