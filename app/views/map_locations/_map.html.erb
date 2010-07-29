@@ -1,7 +1,7 @@
 <div id="googlemap" style="width:<%= width %>px; height:<%= height %>px;"></div>
 
 <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" %>
-<%= javascript_include_tag "http://maps.google.com/maps?file=api&v=2&key=#{RefinerySetting.find_or_set(:google_maps_api_key, '')}" %>
+<script type="text/javascript" src="http://maps.google.com/maps?file=api&v=2&key=<%= RefinerySetting.find_or_set(:google_maps_api_key, '') %>"></script>
 <%= javascript_include_tag "mapiconmaker.js" %>
 <%= javascript_include_tag "markermanager.js" %>
 <%= javascript_include_tag "jquery.metadata.js" %>
