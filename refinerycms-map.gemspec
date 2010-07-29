@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name              = %q{refinerycms-map}
-  s.version           = %q{0.0.1}
+  s.version           = %q{0.0.2}
   s.description       = %q{A RefineryCMS plugin that displays an interactive Google map with flaggable locations.}
   s.date              = %q{2010-07-29}
   s.summary           = %q{Ruby on Rails map engine for RefineryCMS.}
@@ -16,6 +16,7 @@ Gem::Specification.new do |s|
     'app/controllers/admin/map_locations_controller.rb',
     'app/controllers/map_locations_controller.rb',
     'app/models',
+    'app/models/geocode.rb',
     'app/models/map_location.rb',
     'app/views',
     'app/views/admin',
@@ -26,6 +27,9 @@ Gem::Specification.new do |s|
     'app/views/admin/map_locations/index.html.erb',
     'app/views/admin/map_locations/new.html.erb',
     'app/views/map_locations',
+    'app/views/map_locations/_locations.html.erb',
+    'app/views/map_locations/_map.html.erb',
+    'app/views/map_locations/_search.html.erb',
     'app/views/map_locations/index.html.erb',
     'app/views/map_locations/show.html.erb',
     'config',
@@ -39,6 +43,7 @@ Gem::Specification.new do |s|
     'generators/map/templates/jquery.jmapping.min.js',
     'generators/map/templates/jquery.metadata.js',
     'generators/map/templates/mapiconmaker.js',
+    'generators/map/templates/markermanager.js',
     'generators/map/templates/migration.rb',
     'lib',
     'lib/gemspec.rb',
