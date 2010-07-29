@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name              = %q{refinerycms-map}
-  s.version           = %q{0.0.2}
+  s.version           = %q{0.0.3}
   s.description       = %q{A RefineryCMS plugin that displays an interactive Google map with flaggable locations.}
   s.date              = %q{2010-07-29}
   s.summary           = %q{Ruby on Rails map engine for RefineryCMS.}
