@@ -1,6 +1,6 @@
 en:
   plugins:
-    map:
+    refinerycms_map:
       title: Map
   admin:
     map_locations:

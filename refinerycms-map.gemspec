@@ -1,8 +1,8 @@
 Gem::Specification.new do |s|
   s.name              = %q{refinerycms-map}
-  s.version           = %q{0.1.0}
+  s.version           = %q{0.2.0}
   s.description       = %q{A RefineryCMS plugin that displays an interactive Google map with flaggable locations.}
-  s.date              = %q{2010-07-29}
+  s.date              = %q{2010-12-06}
   s.summary           = %q{Ruby on Rails map engine for RefineryCMS.}
   s.email             = %q{lab@envylabs.com}
   s.homepage          = %q{http://github.com/envylabs/refinerycms-map}
@@ -36,18 +36,24 @@ Gem::Specification.new do |s|
     'config/locales',
     'config/locales/en.yml',
     'config/routes.rb',
-    'generators',
-    'generators/map',
-    'generators/map/map_generator.rb',
-    'generators/map/templates',
-    'generators/map/templates/jquery.jmapping.min.js',
-    'generators/map/templates/jquery.metadata.js',
-    'generators/map/templates/mapiconmaker.js',
-    'generators/map/templates/markermanager.js',
-    'generators/map/templates/migration.rb',
     'lib',
     'lib/gemspec.rb',
+    'lib/generators',
+    'lib/generators/refinerycms_map',
+    'lib/generators/refinerycms_map/templates',
+    'lib/generators/refinerycms_map/templates/db',
+    'lib/generators/refinerycms_map/templates/db/migrate',
+    'lib/generators/refinerycms_map/templates/db/migrate/migration_number_create_singuar_name.rb',
+    'lib/generators/refinerycms_map/templates/db/seeds',
+    'lib/generators/refinerycms_map/templates/db/seeds/seed.rb',
+    'lib/generators/refinerycms_map/templates/js',
+    'lib/generators/refinerycms_map/templates/js/jquery.jmapping.min.js',
+    'lib/generators/refinerycms_map/templates/js/jquery.metadata.js',
+    'lib/generators/refinerycms_map/templates/js/mapiconmaker.js',
+    'lib/generators/refinerycms_map/templates/js/markermanager.js',
+    'lib/generators/refinerycms_map_generator.rb',
     'lib/map.rb',
+    'lib/refinerycms-map.rb',
     'license.md',
     'rails',
     'rails/init.rb',
