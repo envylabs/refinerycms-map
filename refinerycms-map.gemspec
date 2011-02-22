@@ -43,7 +43,7 @@ Gem::Specification.new do |s|
     'lib/generators/refinerycms_map/templates',
     'lib/generators/refinerycms_map/templates/db',
     'lib/generators/refinerycms_map/templates/db/migrate',
-    'lib/generators/refinerycms_map/templates/db/migrate/migration_number_create_singuar_name.rb',
+    'lib/generators/refinerycms_map/templates/db/migrate/migration_number_create_singular_name.rb',
     'lib/generators/refinerycms_map/templates/db/seeds',
     'lib/generators/refinerycms_map/templates/db/seeds/seed.rb',
     'lib/generators/refinerycms_map/templates/js',
